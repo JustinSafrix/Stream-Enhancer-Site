@@ -1,54 +1,65 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Identity by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-<head>
+  <head>
     <title>Stream Enhancer</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <link rel="stylesheet" href="assets/css/main.css"/>
-    <link rel="stylesheet" href="assets/css/stream.css"/>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/stream.css" />
     <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css"/>
+      <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script>window.$ = window.jQuery = require('jquery');</script>
+    <script>
+      window.$ = window.jQuery = require("jquery");
+    </script>
     <script src="js/CustomLoader.js"></script>
+    <script src="js/logger.js"></script>
     <script src="js/main.js"></script>
-</head>
-<body>
-<!-- Wrapper -->
-<div id="wrapper">
-    <!-- Main -->
-    <section id="main">
+  </head>
+  <body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <section id="main">
         <video controls id="video"></video>
-    </section>
-    <section id="more">
-        <div>More
-            <icon id="moreIcon" class="fa fa-arrow-circle-down"></icon>
+      </section>
+      <section id="more">
+        <div>
+          More
+          <icon id="moreIcon" class="fa fa-arrow-circle-down"></icon>
         </div>
-    </section>
-    <section id="moreContents">
+      </section>
+      <section id="moreContents">
         <div class="text-input">
-            <input type="text" id="token" placeholder="Paste the export token here!">
-            <label for="token">Export Token</label>
+          <input
+            type="text"
+            id="token"
+            placeholder="Paste the export token here!"
+          />
+          <label for="token">Export Token</label>
         </div>
         <div class="checkboxes">
-            <input type="checkbox" id="darkMode"/>
-            <label for="darkMode" class="check-box">Enable Dark Mode</label>
+          <input type="checkbox" id="darkMode" />
+          <label for="darkMode" class="check-box">Enable Dark Mode</label>
         </div>
         <div class="buttons">
-            <button id="jumpToNow">Jump To Live</button>
+          <button id="jumpToNow">Jump To Live</button>
         </div>
-    </section>
-    <footer id="footer">
+      </section>
+      <footer id="footer">
         <ul class="copyright">
-            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
         </ul>
-    </footer>
-</div>
-</body>
+      </footer>
+    </div>
+  </body>
 </html>
